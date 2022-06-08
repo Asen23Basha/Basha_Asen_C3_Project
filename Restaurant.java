@@ -35,6 +35,8 @@ public class Restaurant {
     public List<Item> getMenu() {
         return this.menu;
     }
+
+//Added the calcualtion part
 public int calculateOrderTotal(List<String> itemName){
         int totalOrderPrice = 0;
         for (String foodItem : itemName){

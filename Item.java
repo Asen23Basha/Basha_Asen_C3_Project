@@ -10,6 +10,7 @@ public class Item {
     public String getName() {
         return name;
     }
+// ADDED getprice() function
     public int getPrice() {
         return price;
     }
