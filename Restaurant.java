@@ -35,6 +35,18 @@ public class Restaurant {
     public List<Item> getMenu() {
         return this.menu;
     }
+public int calculateOrderTotal(List<String> itemName){
+        int totalOrderPrice = 0;
+        for (String foodItem : itemName){
+            for (Item item : menu){
+                if (item.getName().equals(foodItem)) {
+                    totalOrderPrice += item.getPrice();
+                }
+            }
+        }
+
+        return totalOrderPrice;
+    }
 
     private Item findItemByName(String itemName){
         for(Item item: menu) {

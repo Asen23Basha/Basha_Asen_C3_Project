@@ -65,12 +65,15 @@ class RestaurantTest {
     public void selecting_items_in_menu_should_return_total_cost() {
         int testTotal = 0;
         List<String> mySelection = new ArrayList<>();
-        mySelection.add("Grape Juice");
-        mySelection.add("Orange Juice");
+        //mySelection.add("Grape Juice");
+        //mySelection.add("Orange Juice");
 
-        assertEquals(80, restaurant.calculateOrderTotal(mySelection));
+        //assertEquals(80, restaurant.calculateOrderTotal(mySelection));
 
+ mySelection.add("Sweet corn soup");
+            mySelection.add("Vegetable lasagne");
 
+            assertEquals(388, restaurant.calculateOrderTotal(mySelection));
     }
         
         //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
